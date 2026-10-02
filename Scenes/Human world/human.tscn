@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c46ix316syv4q"]
+
+[ext_resource type="Script" uid="uid://x5jlpudrbaqg" path="res://Scripts/human.gd" id="1_r5524"]
+[ext_resource type="Texture2D" uid="uid://duhvmtopq74dn" path="res://Assets/players.png" id="2_117pt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rg1sp"]
+atlas = ExtResource("2_117pt")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uup77"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rg1sp")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uup77"]
+radius = 7.0
+height = 20.0
+
+[node name="Human" type="CharacterBody2D" unique_id=942117095]
+script = ExtResource("1_r5524")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1032961414]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_uup77")
+animation = &"idle"
+
+[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=334440483]
+position = Vector2(1, -9)
+shape = SubResource("CapsuleShape2D_uup77")
