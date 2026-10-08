@@ -1,9 +1,20 @@
 [gd_scene format=3 uid="uid://dphvk63ud47i1"]
 
 [ext_resource type="PackedScene" uid="uid://c46ix316syv4q" path="res://Scenes/Human world/human.tscn" id="1_fu64s"]
+[ext_resource type="Script" uid="uid://ce4tkkkpxu4f" path="res://scripts/camera.gd" id="2_251ep"]
+
+[sub_resource type="TileSet" id="TileSet_uup77"]
+tile_size = Vector2i(24, 24)
 
 [node name="Human world" type="Node2D" unique_id=1834233297]
 
 [node name="Human" parent="." unique_id=942117095 instance=ExtResource("1_fu64s")]
+unique_name_in_owner = true
 
 [node name="Camera" type="Camera2D" parent="." unique_id=883428067]
+zoom = Vector2(2, 2)
+script = ExtResource("2_251ep")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1009926046]
+position = Vector2(48, 0)
+tile_set = SubResource("TileSet_uup77")
