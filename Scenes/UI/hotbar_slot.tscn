@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://daieud2r2r7ny"]
+
+[ext_resource type="Texture2D" uid="uid://dw1bcogl68ocm" path="res://Assets/Atlases/hotbar_slot.tres" id="1_2tjgb"]
+
+[node name="HotbarSlot" type="TextureRect" unique_id=442458230]
+offset_right = 36.0
+offset_bottom = 38.0
+texture = ExtResource("1_2tjgb")

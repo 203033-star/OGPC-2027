@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://uoprm2aif4fd"]
+
+[ext_resource type="PackedScene" uid="uid://daieud2r2r7ny" path="res://Scenes/UI/hotbar_slot.tscn" id="1_trnr3"]
+
+[node name="Hotbar" type="HBoxContainer" unique_id=1898888452]
+offset_right = 180.0
+offset_bottom = 38.0
+theme_override_constants/separation = 0
+
+[node name="HotbarSlot2" parent="." unique_id=442458230 instance=ExtResource("1_trnr3")]
+layout_mode = 2
+
+[node name="HotbarSlot" parent="." unique_id=1243122388 instance=ExtResource("1_trnr3")]
+layout_mode = 2
