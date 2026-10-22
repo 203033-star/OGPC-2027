@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c46ix316syv4q" path="res://Scenes/Human world/human.tscn" id="1_fu64s"]
 [ext_resource type="Script" uid="uid://ce4tkkkpxu4f" path="res://Scripts/camera.gd" id="2_251ep"]
+[ext_resource type="PackedScene" uid="uid://dokw2wf0cdyc" path="res://Scenes/UI/human_world_ui.tscn" id="3_arxbg"]
 
 [sub_resource type="TileSet" id="TileSet_uup77"]
 tile_size = Vector2i(24, 24)
@@ -12,8 +13,11 @@ tile_size = Vector2i(24, 24)
 unique_name_in_owner = true
 
 [node name="Camera" type="Camera2D" parent="." unique_id=883428067]
-zoom = Vector2(2, 2)
 script = ExtResource("2_251ep")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1009926046]
 tile_set = SubResource("TileSet_uup77")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1575487470]
+
+[node name="HumanWorldUI" parent="CanvasLayer" unique_id=1025647552 instance=ExtResource("3_arxbg")]

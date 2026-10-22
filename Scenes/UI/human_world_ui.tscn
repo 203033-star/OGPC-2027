@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dokw2wf0cdyc"]
+
+[ext_resource type="PackedScene" uid="uid://uoprm2aif4fd" path="res://Scenes/UI/hotbar.tscn" id="1_pfgxb"]
+
+[node name="HumanWorldUI" type="Control" unique_id=1025647552]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hotbar" parent="." unique_id=1898888452 instance=ExtResource("1_pfgxb")]
+layout_mode = 1

@@ -3,12 +3,30 @@
 [ext_resource type="PackedScene" uid="uid://daieud2r2r7ny" path="res://Scenes/UI/hotbar_slot.tscn" id="1_trnr3"]
 
 [node name="Hotbar" type="HBoxContainer" unique_id=1898888452]
-offset_right = 180.0
-offset_bottom = 38.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -38.0
+offset_right = 80.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
 theme_override_constants/separation = 0
 
-[node name="HotbarSlot2" parent="." unique_id=442458230 instance=ExtResource("1_trnr3")]
+[node name="HotbarSlot" parent="." unique_id=1243122388 instance=ExtResource("1_trnr3")]
 layout_mode = 2
 
-[node name="HotbarSlot" parent="." unique_id=1243122388 instance=ExtResource("1_trnr3")]
+[node name="HotbarSlot2" parent="." unique_id=1190445612 instance=ExtResource("1_trnr3")]
+layout_mode = 2
+
+[node name="HotbarSlot3" parent="." unique_id=2137111736 instance=ExtResource("1_trnr3")]
+layout_mode = 2
+
+[node name="HotbarSlot4" parent="." unique_id=1575941300 instance=ExtResource("1_trnr3")]
+layout_mode = 2
+
+[node name="HotbarSlot5" parent="." unique_id=442458230 instance=ExtResource("1_trnr3")]
 layout_mode = 2
