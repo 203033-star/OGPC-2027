@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cknrtmi1llsc0"]
+
+[ext_resource type="Texture2D" uid="uid://d3wivr0oms4gs" path="res://Assets/Atlases/inventory_background.tres" id="1_s6m5x"]
+
+[node name="NinePatchRect" type="NinePatchRect" unique_id=1688415644]
+offset_right = 12.0
+offset_bottom = 14.0
+texture = ExtResource("1_s6m5x")
+region_rect = Rect2(0, 0, 36, 38)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 8
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1053796854]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 0
+offset_right = 24.0
+offset_bottom = 24.0

@@ -30,3 +30,18 @@ layout_mode = 2
 
 [node name="HotbarSlot5" parent="." unique_id=442458230 instance=ExtResource("1_trnr3")]
 layout_mode = 2
+
+[node name="HotbarSlot6" parent="." unique_id=1188377265 instance=ExtResource("1_trnr3")]
+layout_mode = 2
+
+[node name="HotbarSlot7" parent="." unique_id=1643109821 instance=ExtResource("1_trnr3")]
+layout_mode = 2
+
+[node name="HotbarSlot8" parent="." unique_id=541344638 instance=ExtResource("1_trnr3")]
+layout_mode = 2
+
+[node name="HotbarSlot9" parent="." unique_id=507799786 instance=ExtResource("1_trnr3")]
+layout_mode = 2
+
+[node name="HotbarSlot10" parent="." unique_id=335900081 instance=ExtResource("1_trnr3")]
+layout_mode = 2

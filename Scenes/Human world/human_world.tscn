@@ -16,6 +16,7 @@ unique_name_in_owner = true
 script = ExtResource("2_251ep")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1009926046]
+position = Vector2(48, 0)
 tile_set = SubResource("TileSet_uup77")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1575487470]
